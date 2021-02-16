@@ -3,21 +3,13 @@ import { SafeAreaView, Text } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import { Button } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
+import Navigation from './src/navigation/Navigation'
 
 export default function App() {
   return (
     <PaperProvider>
       <NavigationContainer>
-        <SafeAreaView>
-          <Text>Hola Mundo</Text>
-          <Button
-            icon='image'
-            mode='contained'
-            onPress={() => console.log('Pressed')}
-          >
-            Press me
-        </Button>
-        </SafeAreaView>
+        <Navigation />
       </NavigationContainer>
     </PaperProvider>
   )
