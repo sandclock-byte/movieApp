@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Popular() {
     return (
         <View>
-            <Text></Text>
+            <Text>Estamos en Popular</Text>
         </View>
     );
 }
