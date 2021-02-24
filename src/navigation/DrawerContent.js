@@ -34,8 +34,27 @@ export default function DrawerContent(props) {
                     onPress={() => onChangeScreen('news')}
                 />
             </Drawer.Section>
+            <Drawer.Section title='Opciones'>
+                <TouchableRipple>
+                    <View style={styles.preferece}>
+                        <Text>Tema Oscuro</Text>
+                        <Switch
+                            value={theme === 'dark'}
+                            onValueChange={toggleTheme}
+                        />
+                    </View>
+                </TouchableRipple>
+            </Drawer.Section>
         </DrawerContentScrollView>
     )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    preferece: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingVertical: 12,
+        paddingHorizontal: 16,
+    }
+});
