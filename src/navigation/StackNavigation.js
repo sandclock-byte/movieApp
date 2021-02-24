@@ -13,8 +13,6 @@ export default function StackNavigation(props) {
 
     const { navigation } = props;
 
-    console.log(props);
-
     const buttonLeft = () => {
         return (
             <IconButton
