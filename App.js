@@ -11,7 +11,7 @@ import {
   DefaultTheme as DefaultThemeNavigation,
 } from '@react-navigation/native';
 import Navigation from './src/navigation/Navigation';
-import PreferencesContext from './src/context/PreferencesContext'
+import PreferencesContext from './src/context/PreferencesContext';
 
 export default function App() {
 
